@@ -1,0 +1,23 @@
+.modulo-pedidoDeCompras,
+.modulo-pedidoDeVendas {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#txtPedidoCompra,
+#txtPedidoVenda {
+    text-align: start;
+}
+
+.form {
+    padding: 20px;
+}
+
+.descricaoDoProduto h4 {
+    text-align: center;
+}
+
+#btnForm {
+    width: 100%;
+}

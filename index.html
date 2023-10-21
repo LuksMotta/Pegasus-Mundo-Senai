@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Login - Pegasus SIG </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="src/css/login.css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/Index.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script defer src="src/js/index.js"></script>
+</head>
+
+<body>
+    <aside>
+        <div class="div-logoMsenai">
+            <img class="img-senai" src="images/logo-Mundosenai-topo.svg" alt="Mundo Senai">
+        </div>
+
+    </aside> 
+    <main class="container">
+        <form>
+            
+            <div class="login-box">
+                <h1>Pegasus - Sistema Integrado de Gestão</h2>
+                <h2>
+                    Faça Login
+                </h2>
+                <div class="user-box">
+                    <input type="text" id='usuario' oninput="mascara(this)" placeholder="CPF" required  />
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+                <div class="user-box">
+                    <input type="password" id='senha' placeholder="Senha" required maxlength="15" />
+                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                </div>
+               
+                <div class="opcoes">
+                    <div class="informaçõesLogin">
+                        <input type="checkbox" id="lembrarInformacoes" name="lembrar" value="lembrarInformacoes" />
+                        <label for="lembrarInformacoes">Lembre-se de mim</label>
+                    </div>
+                    <div class="esqueceuSenha">
+                        <a href="#">Esqueceu suas informações?</a>
+                    </div>
+                </div>
+                <div class="botao">
+                    <button href="html/demanda.html">Entrar</button>
+                </div>
+            </div>
+            <div class="div-logoSenai">
+                <img  style="width: 35%;" src="images/senailogo-icon.svg" alt="">
+            </div>
+          
+        </form>
+    </main>
+    <script src="src/js/login.js"></script>
+</body>
+
+</html>

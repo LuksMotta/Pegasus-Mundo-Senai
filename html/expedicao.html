@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedição - Pegasus SIG</title>
+
+    <!--Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--Outros Links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+
+    <!--CSS & JS Links-->
+    <link rel="stylesheet" href="../src/css/navbar-styles.css">
+    <script src="../src/js/navbar-scripts.js" defer></script>
+    <script defer src="../src/js/pedidos-scripts.js"></script>
+    <link rel="stylesheet" href="../src/css/pedidos-styles.css">
+    <link rel="stylesheet" href="../src/css/expedicao-styles.css">
+    <script defer src="../src/js/expedicao.js"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="../images/wallacinho.png" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="demanda.html" class="nav_logo">
+                    <img src="../images/logo.png" alt=""></i>
+                </a>
+                <div class="nav_list">
+                    <a href="demanda.html" class="nav_link">
+                        <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Demanda</span>
+                    </a>
+                    <a href="indicadores.html" class="nav_link">
+                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Indicadores</span>
+                    </a>
+                    <a href="#" class="nav_link active">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Expedições</span>
+                    </a>
+                    <a href="pedido-compra.html" class="nav_link">
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name">Pedido de Compra</span>
+                    </a>
+                    <a href="pedido-venda.html" class="nav_link">
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name">Pedido de Venda</span>
+                    </a>
+                    <a href="planejamento-compras.html" class="nav_link">
+                        <i class='bx bx-folder nav_icon'></i>
+                        <span class="nav_name">Planejamento</span> </a>
+                </div>
+            </div> <a href="../index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                    class="nav_name">Sair</span> </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="modulo-pedidoDeVendas">
+        <h5 id="txtPedidoVenda">Módulo - Expedição</h5>
+    </div>
+    <div class="form">
+        <div class="main">
+            <form method="post" class="row g-3" id="form">
+                <div id="lado-esquerdo">
+                    <div class="col-md-4" id="lado-esquerdo-1">
+                        <div>
+                            <label for="pedidoN" class="form-label">Tipo de Endereço</label>
+                            <input type="number" class="form-control" id="tipoEndereco" />
+                        </div>
+                        <div>
+                            <label for="cliente" class="form-label">Meio de Envio</label>
+                            <input type="text" class="form-control" id="meioEnvio" />
+                        </div>
+                        <div>
+                            <label for="vendedor" class="form-label">Transportadora</label>
+                            <input type="date" class="form-control" id="transportadora" />
+                        </div>
+                        <div>
+                            <label for="CNPJ" class="form-label">Código de Rastreio</label>
+                            <input type="text" class="form-control" id="codigoRastreio" />
+                        </div>
+                        <div>
+                            <label for="data" class="form-label">Data de Envio</label>
+                            <input type="date" class="form-control" id="dataEnvio" />
+                        </div>
+                        <div>
+                            <label for="cliente" class="form-label">Cliente</label>
+                            <input type="text" class="form-control" id="cliente" />
+                        </div>
+                        <div>
+                            <label for="CNPJ" class="form-label">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" />
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="lado-esquerdo-2">
+                        <div>
+                            <label for="pedidoN" class="form-label">Total Frete (R$)</label>
+                            <input type="number" class="form-control" id="totalFrete" />
+                        </div>
+                        <div>
+                            <label for="cliente" class="form-label">Previsão de Entrega</label>
+                            <input type="text" class="form-control" id="previsaoEntrega" />
+                        </div>
+                        <div>
+                            <label for="vendedor" class="form-label">Previsão Entrega dos Produtos</label>
+                            <button type="submit" id="btn1" class="btn btn-success">Preencher Vazios</button>
+                            <button type="submit" id="btn2" class="btn btn-success">Sobrecrever</button>
+                        </div>
+                        <div>
+                            <label for="CNPJ" class="form-label">Valor da Carga</label>
+                            <input type="text" class="form-control" id="valorCarga" />
+                        </div>
+                        <div>
+                            <label for="data" class="form-label">Quantidade da Carga</label>
+                            <input type="date" class="form-control" id="quantidadeCarga" />
+                        </div>
+                        <div>
+                            <label for="data" class="form-label">Nº do Caminhão</label>
+                            <input type="date" class="form-control" id="numeroCaminhao" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 row g-3" id="lado-direito">
+                    <div class="col-12 row g-3" id="lado-direito-1">
+                        <div>
+                            Ordens de Expedição
+                        </div>
+                        <div class="col-md-4">
+                            <label for="CNPJ" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cep" />
+                        </div>
+                        <div class="col-md-8">
+                            <label for="data" class="form-label">Logradouro</label>
+                            <input type="text" class="form-control" id="logradouro" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="CNPJ" class="form-label">UF</label>
+                            <input type="text" class="form-control" id="uf" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="data" class="form-label">Município</label>
+                            <input type="text" class="form-control" id="municipio" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="data" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="numero" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="CNPJ" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="data" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="CNPJ" class="form-label">País</label>
+                            <input type="text" class="form-control" id="pais" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="data" class="form-label">Cód. Municipal</label>
+                            <input type="text" class="form-control" id="codMunicipal" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="data" class="form-label">Código UF</label>
+                            <input type="text" class="form-control" id="codUf" />
+                        </div>
+                    </div>
+                </div>
+
+            <button type="submit" id="btnForm" class="btn btn-primary" onclick="ManipulandoDados()">Enviar</button>
+
+        </form>
+        </div>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nº da Ordem de Expedição</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Cod. Rastreio</th>
+                        <th scope="col">Valor Carga</th>
+                        <th scope="col">Qtd. Carga</th>
+                        <th scope="col">Prev. Entrega</th>
+                        <th scope="col">Nº Caminhão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="id1" scope="row">...</th>
+                        <td id="cliente1">...</td>
+                        <td id="codrastreio1">...</td>
+                        <td id="valorcarga1">...</td>
+                        <td id="qtdcarga1">...</td>
+                        <td id="preventrega1">...</td>
+                        <td id="ncaminhao1">...</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th id="id1" scope="row">...</th>
+                        <td id="cliente2">...</td>
+                        <td id="codrastreio2">...</td>
+                        <td id="valorcarga2">...</td>
+                        <td id="qtdcarga2">...</td>
+                        <td id="preventrega2">...</td>
+                        <td id="ncaminhao2">...</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th id="id1" scope="row">...</th>
+                        <td id="cliente1">...</td>
+                        <td id="codrastreio1">...</td>
+                        <td id="valorcarga1">...</td>
+                        <td id="qtdcarga1">...</td>
+                        <td id="preventrega">...</td>
+                        <td id="ncaminhao">...</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th id="id1" scope="row">...</th>
+                        <td id="cliente1">...</td>
+                        <td id="codrastreio1">...</td>
+                        <td id="valorcarga1">...</td>
+                        <td id="qtdcarga1">...</td>
+                        <td id="preventrega">...</td>
+                        <td id="ncaminhao">...</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th id="id1" scope="row">...</th>
+                        <td id="cliente1">...</td>
+                        <td id="codrastreio1">...</td>
+                        <td id="valorcarga1">...</td>
+                        <td id="qtdcarga1">...</td>
+                        <td id="preventrega">...</td>
+                        <td id="ncaminhao">...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+    </div>
+    <!--Container Main end-->
+</body>
+
+</html>

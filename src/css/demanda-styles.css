@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main,
+.footer {
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.header-cabecalho {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 35px;
+}
+
+.table-Tabela {
+    width: 100%;
+
+}
+
+.section-secao {
+    display: flex;
+    justify-content: end;
+    background-color: gainsboro;
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.section-secao2 {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: rgb(2, 2, 92);
+    color: white;
+}
+
+.input-Secao {
+    width: 40px;
+    border: solid 1px;
+    text-align: center;
+}
+
+.thead-topo {
+    background-color: rgb(2, 2, 92);
+    color: white;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+.div-corpo {
+    margin-top: 1%;
+}
+
+.div-botoes {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+table,
+td {
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    table caption {
+        display: none;
+    }
+}

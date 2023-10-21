@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demanda - Pegasus SIG</title>
+
+    <!--Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--Outros Links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+
+    <!--CSS & JS Links-->
+    <link rel="stylesheet" href="../src/css/navbar-styles.css">
+    <script src="../src/js/navbar-scripts.js" defer></script>
+    <link rel="stylesheet" href="../src/css/demanda-styles.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img src="../images/wallacinho.png" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo" id="logo-img">
+                    <img  id="logoId" src="../images/logo.png" alt=""></i>
+                </a>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active">
+                        <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Demanda</span>
+                    </a>
+                    <a href="indicadores.html" class="nav_link">
+                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Indicadores</span>
+                    </a>
+                    <a href="expedicao.html" class="nav_link">
+                        <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Expedições</span>
+                    </a>
+                    <a href="pedido-compra.html" class="nav_link">
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name">Pedido de Compra</span>
+                    </a>
+                    <a href="pedido-venda.html" class="nav_link">
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name">Pedido de Venda</span>
+                    </a>
+                    <a href="planejamento-compras.html" class="nav_link">
+                        <i class='bx bx-folder nav_icon'></i>
+                        <span class="nav_name">Planejamento</span> </a>
+                </div>
+            </div> <a href="../index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                    class="nav_name">Sair</span> </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="div-corpo">
+        <main class="main-">
+            <table class="table-Tabela">
+                <thead class="thead-topo">
+                    <tr class="tr-Coluna">
+                        <th> Cliente</th>
+                        <th>Quantidade Semana 1 </th>
+                        <th>Quantidade Semana 2 </th>
+                        <th>Quantidade Semana 3 </th>
+                        <th>Quantidade Semana 4 </th>
+                        <th>Quantidade Semana 5 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-Linha">
+                        <td>Ademir Aparecido De Alvarenga</td>
+                        <td>250</td>
+                        <td>606</td>
+                        <td>777</td>
+                        <td>1010</td>
+                        <td>4500</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>Bruno Ricardo Marques Dutra </td>
+                        <td>202</td>
+                        <td>303</td>
+                        <td>745</td>
+                        <td>1100</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>Camila Calixto Moreira Dias</td>
+                        <td>10</td>
+                        <td>23</td>
+                        <td>39</td>
+                        <td>100</td>
+                        <td>129</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>Daniela Candido De Caires</td>
+                        <td>200</td>
+                        <td>30</td>
+                        <td>44</td>
+                        <td>199</td>
+                        <td>200</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>Elania Cristina Alves Dos Santos</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>300</td>
+                        <td>400</td>
+                        <td>500</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>Franciele Dutra Das Neves</td>
+                        <td>80</td>
+                        <td>100</td>
+                        <td>320</td>
+                        <td>450</td>
+                        <td>100</td>
+                    </tr>
+            </table>
+
+        </main>
+
+    </div>
+    <!-- 2º tabela da tela -->
+    <section class="section-secao">
+        <div>
+            <label for="demanda">DEMANDA TOTAL:</label>
+            <input type="text" name="demanda" value="1517" disabled style="font-weight: bold;" class="input-Secao" />
+        </div>
+    </section>
+
+    <section class="section-secao2">
+        <div>
+            <h1>PEDIDOS DE VENDA</h1>
+        </div>
+    </section>
+    <div class="div-corpo2">
+        <main class="main">
+            <table class="table-Tabela">
+                <thead class="thead-topo">
+                    <tr class="tr-Coluna">
+                        <th>Nº do pedido </th>
+                        <th>Nome do cliente </th>
+                        <th>CNPJ </th>
+                        <th>Endereço de entrega </th>
+                        <th>Quantidade</th>
+                        <th> ValorR$</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-Linha">
+                        <td>1º</td>
+                        <td>Fabrício César Heleno Santos </td>
+                        <td>145.654.900/0001-90</td>
+                        <td>Rua Félix Mendes Rodrigues, N°149</td>
+                        <td>3</td>
+                        <td>R$10,00</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>2º</td>
+                        <td>Etiene Alencar Ferreira </td>
+                        <td>777.898.767/0001-11</td>
+                        <td>Rodovia Eng. Edilson Távora, 4958</td>
+                        <td>4</td>
+                        <td>R$350,00</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>3º</td>
+                        <td>Josemar Ferreira Ramos</td>
+                        <td>123.456.890/0001-82</td>
+                        <td>Rua Tim Maia, 442</td>
+                        <td>7</td>
+                        <td>R$1010,00</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>4º</td>
+                        <td>Leandro Alves Dos Santos </td>
+                        <td>943.456.890/0001-56</td>
+                        <td>Rua Olhos D`Água, 592</td>
+                        <td>16</td>
+                        <td>R$5500,00</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>5º</td>
+                        <td>Klaus Kartanas Palhas</td>
+                        <td>673.466.891/0001-07</td>
+                        <td>Rua Flamengo, 1981</td>
+                        <td>9</td>
+                        <td>R$2000,00</td>
+                    </tr>
+                    <tr class="tr-Linha">
+                        <td>6º</td>
+                        <td>Lucas De Oliveira</td>
+                        <td>132.498.978/0001-81</td>
+                        <td>Rua Sergipe, 1909</td>
+                        <td>14</td>
+                        <td>R$300,00</td>
+                    </tr>
+            </table>
+
+        </main>
+
+    </div>
+</body>
+
+</html>

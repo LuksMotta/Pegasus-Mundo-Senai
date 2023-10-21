@@ -1,0 +1,19 @@
+.div-logoMsenai{
+display: flex;
+justify-content: center;
+width: 100%;
+margin-top: 50%;
+}
+.img-senai{
+width: 30%;
+}
+.div-logoSenai{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}

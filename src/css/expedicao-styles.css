@@ -1,0 +1,40 @@
+#form{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    border-bottom: 1px black solid;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+#lado-direito{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+#lado-esquerdo {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    gap: 12%;
+}
+
+#lado-direito-1{
+    border: 1px solid black;
+    padding-bottom: 25px;
+}
+
+#btn1{
+    width: 200px;
+}
+#btn2{
+    width: 180px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
