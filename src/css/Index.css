@@ -17,3 +17,13 @@ h1{
     display: flex;
     justify-content: center;
 }
+footer{
+
+    width: 33.6%;
+    color: white;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    
+}
