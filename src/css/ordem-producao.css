@@ -1,0 +1,24 @@
+.modulo-ordemProducao{
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#txtModuloOrdemProducao{
+    text-align: start;
+}
+
+.logoOrdemProducao{
+    padding: 30px;
+}
+
+#txtOrdemProducao{
+    margin: 50px;
+    text-align: center;
+}
+
+#tabela{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
