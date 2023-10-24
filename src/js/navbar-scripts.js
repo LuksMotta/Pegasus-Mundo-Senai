@@ -22,9 +22,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
                 if (nav.className.includes('show')) {
                     logo.src = "../images/logo.png";
-                 } else {
+                    logo.style = "height: 50%"
+                } else {
                     logo.src = "../images/favicon.png";
-                 }
+                    logo.style = "height: 25%"
+                }
 
             })
         }

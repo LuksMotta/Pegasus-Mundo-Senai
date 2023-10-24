@@ -37,36 +37,43 @@
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="#" class="nav_logo" id="logo-img">
-                    <img  id="logoId" src="../images/favicon.png" alt=""></i>
+                <a href="demanda.html" class="nav_logo" id="logo-img">
+                    <img id="logoId" src="../images/favicon.png" alt=""></i>
                 </a>
                 <div class="nav_list">
-                    <a href="#" class="nav_link">
+                    <a href="demanda.html" class="nav_link">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Demanda</span>
                     </a>
-                    <a href="indicadores.html" class="nav_link">
-                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
-                        <span class="nav_name">Indicadores</span>
-                    </a>
-                    <a href="expedicao.html" class="nav_link active">
+                    <a href="#" class="nav_link active">
                         <i class='bx bx-message-square-detail nav_icon'></i>
                         <span class="nav_name">Expedições</span>
                     </a>
                     <a href="pedido-compra.html" class="nav_link">
-                        <i class='bx bx-bookmark nav_icon'></i>
+                        <i class='bx bx-shopping-bag nav_icon'></i>
                         <span class="nav_name">Pedido de Compra</span>
                     </a>
                     <a href="pedido-venda.html" class="nav_link">
-                        <i class='bx bx-bookmark nav_icon'></i>
+                        <i class='bx bx-money nav_icon'></i>
                         <span class="nav_name">Pedido de Venda</span>
                     </a>
                     <a href="planejamento-compras.html" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
                         <span class="nav_name">Planejamento</span> </a>
+                    <a href="ordem-producao.html" class="nav_link">
+                        <i class='bx bx-fast-forward-circle nav_icon'></i>
+                        <span class="nav_name">Ordem de Produção</span>
+                    </a>
+                    <a href="indicadores.html" class="nav_link">
+                        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Indicadores</span>
+                    </a>
                 </div>
-            </div> <a href="../index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
-                    class="nav_name">Sair</span> </a>
+            </div>
+            <a href="../index.html" class="nav_link">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Sair</span>
+            </a>
         </nav>
     </div>
     <!--Container Main start-->
@@ -184,9 +191,9 @@
                     </div>
                 </div>
 
-            <button type="submit" id="btnForm" class="btn btn-primary" onclick="ManipulandoDados()">Enviar</button>
+                <button type="submit" id="btnForm" class="btn btn-primary" onclick="ManipulandoDados()">Enviar</button>
 
-        </form>
+            </form>
         </div>
 
         <div>
@@ -205,12 +212,12 @@
                 <tbody>
                     <tr>
                         <th contenteditable="true" id="id1" scope="row"></th>
-                        <td  id="cliente1"></td>
-                        <td  id="codrastreio1"></td>
-                        <td  id="valorcarga1"></td>
-                        <td  id="qtdcarga1"></td>
-                        <td  id="preventrega1"></td>
-                        <td  id="ncaminhao1"></td>
+                        <td id="cliente1"></td>
+                        <td id="codrastreio1"></td>
+                        <td id="valorcarga1"></td>
+                        <td id="qtdcarga1"></td>
+                        <td id="preventrega1"></td>
+                        <td id="ncaminhao1"></td>
                     </tr>
                 </tbody>
                 <tbody>
@@ -260,7 +267,7 @@
             </table>
         </div>
 
-        
+
     </div>
     <!--Container Main end-->
 </body>
