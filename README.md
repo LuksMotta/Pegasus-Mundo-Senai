@@ -22,3 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O Pegasus - Sistema Integrado de Gestão é uma aplicação web desenvolvida ... 
+
+## 🔐 Licença
+
+Este projeto está sob licença MIT.
